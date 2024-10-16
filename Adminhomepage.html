@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home Page - Library Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #00695c;
+            margin-bottom: 20px;
+        }
+
+        .nav {
+            margin-bottom: 20px;
+        }
+
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #00796b;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #00796b;
+        }
+
+        th {
+            background-color: #b2dfdb;
+            color: #004d40;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #555;
+        }
+
+        .button {
+            background-color: #00796b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #004d40;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Admin Home Page</h1>
+
+    <div class="nav">
+        
+        <a href="Maintainance.html">Maintenance</a>
+        <a href="Reports.html">Reports</a>
+        <a href="Transaction.html">Transactions</a>
+    </div>
+
+    <h2>Product Details</h2>
+
+    <table>
+        <tr>
+            <th>Code No From</th>
+            <th>Code No To</th>
+            <th>Category</th>
+        </tr>
+        <tr>
+            <td>SC(B/M)000001</td>
+            <td>SC(B/M)000004</td>
+            <td>Science</td>
+        </tr>
+        <tr>
+            <td>EC(B/M)000001</td>
+            <td>EC(B/M)000004</td>
+            <td>Economics</td>
+        </tr>
+        <tr>
+            <td>FC(B/M)000001</td>
+            <td>FC(B/M)000004</td>
+            <td>Fiction</td>
+        </tr>
+        <tr>
+            <td>CH(B/M)000001</td>
+            <td>CH(B/M)000004</td>
+            <td>Children</td>
+        </tr>
+        <tr>
+            <td>PD(B/M)000001</td>
+            <td>PD(B/M)000004</td>
+            <td>Personal Development</td>
+        </tr>
+    </table>
+
+    <div>
+        <button class="button" onclick="location.href='UserLogin.html';">Back</button>
+        <button class="button" onclick="location.href='AdminLogin.html';">Log Out</button>
+    </div>
+
+    <div class="footer">© 2024 Library Management System</div>
+
+</body>
+</html>

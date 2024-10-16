@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Fine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #4cae4c;
+        }
+
+        .logout {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #d9534f;
+        }
+
+        .logout:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pay Fine</h1>
+        <form>
+            <label for="book-name">Enter Book Name:</label>
+            <input type="text" id="book-name" required>
+
+            <label for="author">Enter Author:</label>
+            <input type="text" id="author" required>
+
+            <label for="serial-no">Serial No:</label>
+            <input type="text" id="serial-no" required>
+
+            <label for="issue-date">Issue Date:</label>
+            <input type="date" id="issue-date" required>
+
+            <label for="return-date">Return Date:</label>
+            <input type="date" id="return-date" required>
+
+            <label for="actual-return-date">Actual Return Date:</label>
+            <input type="date" id="actual-return-date" required>
+
+            <label for="fine-calculated">Fine Calculated:</label>
+            <input type="text" id="fine-calculated" value="0" readonly>
+
+            <label>
+                <input type="checkbox" id="fine-paid"> Fine Paid
+            </label>
+
+            <label for="remarks">Remarks (Optional):</label>
+            <textarea id="remarks" rows="4" placeholder="Any remarks"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <a href="#" class="logout">Log Out</a>
+    </div>
+</body>
+</html>

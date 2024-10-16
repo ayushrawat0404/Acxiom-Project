@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction Page - Library Management System</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #00695c;
+  color: white;
+  padding: 20px 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #555;
+}
+
+    </style>
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Library Management System</h1>
+    <nav>
+      
+      <a href="bookavailable.html">Is Book Available?</a>
+      <a href="issuebook.html">Issue Book</a>
+      <a href="returnbook.html">Return Book</a>
+      <a href="payfine.html">Pay Fine</a>
+      <a href="login.html">Log Out</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Transactions</h2>
+    
+    <section id="availability">
+      <h3>Book Availability</h3>
+      <form id="availability-form" onsubmit="return checkAvailability()">
+        <label for="book_name">Enter Book Name:</label>
+        <input type="text" id="book_name" required>
+
+        <label for="author_name">Enter Author:</label>
+        <select id="author_name" required>
+          <option value="">Select Author</option>
+          <option value="Author1">Author 1</option>
+          <option value="Author2">Author 2</option>
+          <option value="Author3">Author 3</option>
+        </select>
+
+        <button type="submit">Check Availability</button>
+      </form>
+    </section>
+
+    <section id="issue">
+      <h3>Issue Book</h3>
+      <form id="issue-form" onsubmit="return issueBook()">
+        <label for="issue_book_name">Book Name:</label>
+        <input type="text" id="issue_book_name" required>
+
+        <label for="issue_author_name">Author Name:</label>
+        <input type="text" id="issue_author_name" required readonly>
+
+        <button type="submit">Issue Book</button>
+      </form>
+    </section>
+
+    <section id="return">
+      <h3>Return Book</h3>
+      <form id="return-form" onsubmit="return returnBook()">
+        <label for="return_book_name">Book Name:</label>
+        <input type="text" id="return_book_name" required>
+
+        <label for="return_author_name">Author Name:</label>
+        <input type="text" id="return_author_name" required readonly>
+
+        <button type="submit">Return Book</button>
+      </form>
+    </section>
+
+    <section id="pay-fine">
+      <h3>Pay Fine</h3>
+      <form id="fine-form" onsubmit="return payFine()">
+        <label for="fine_amount">Fine Amount:</label>
+        <input type="number" id="fine_amount" required>
+
+        <button type="submit">Pay Fine</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">© 2024 Library Management System</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Availability</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .logout {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #d9534f;
+        }
+
+        .logout:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Book Availability</h1>
+        <form>
+            <label for="book-name">Enter Book Name:</label>
+            <select id="book-name" required>
+                <option value="" disabled selected>Select a book</option>
+                <option value="book1">Book 1</option>
+                <option value="book2">Book 2</option>
+                <option value="book3">Book 3</option>
+            </select>
+
+            <label for="author">Enter Author:</label>
+            <select id="author" required>
+                <option value="" disabled selected>Select an author</option>
+                <option value="author1">Author 1</option>
+                <option value="author2">Author 2</option>
+                <option value="author3">Author 3</option>
+            </select>
+
+            <button type="submit">Check Availability</button>
+        </form>
+        <a href="#" class="logout">Log Out</a>
+    </div>
+</body>
+</html>
+

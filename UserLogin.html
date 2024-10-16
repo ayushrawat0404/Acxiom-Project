@@ -1,0 +1,106 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; 
+            height: 100vh;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;
+            margin: 0;
+            text-align: center; 
+        }
+
+        h1 {
+            color: #00695c; 
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px; 
+        }
+
+        label {
+            margin-bottom: 10px;
+            font-weight: bold; 
+            color: #00796b; 
+        }
+
+        input {
+            width: 100%; 
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: border-color 0.3s; 
+        }
+
+        input:focus {
+            border-color: #00796b; 
+            outline: none; 
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #00796b; 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s; 
+        }
+
+        button:hover {
+            background-color: #004d40; 
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #555; 
+        }
+
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Library Management System</h1>
+    <h1>Admin Login</h1>
+    
+    <form id="loginForm">
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id" placeholder="Enter your admin ID" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your admin password" required>
+
+        <a href="UserHomePage.html" class="button">Login</a>
+
+        <button type="reset">Cancel</button>
+        
+        <div id="errorMessage" class="error-message"></div>
+    </form>
+
+    <div class="footer">© 2024 Library Management System</div>
+
+    
